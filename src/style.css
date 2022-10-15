@@ -3,10 +3,46 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    display: flex;
+    flex-direction: column;
 }
 
 #canvas {
     width: 400px;
     height: 300px;
     background-color: grey;
+}
+
+#control-box {
+    width: 400px;
+    height: 150px;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+}
+
+#left,
+#right {
+    width: 200px;
+    height: 150px;
+}
+
+#left {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}
+
+#right {
+    background-color: orangered;
+}
+
+.placeholder {
+    width: 50px;
+    height: 50px;
+    outline: 1px solid red;
+}
+
+p {
+    color: white;
 }
