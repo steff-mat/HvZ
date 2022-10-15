@@ -13,7 +13,14 @@
     height: 50px;
 }
 
-p {
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    padding: 0;
     margin: 0;
-    font-size: x-small;
+    border: 0;
 }
