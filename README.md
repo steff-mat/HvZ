@@ -1,2 +1,0 @@
-# HvZ
-Hunter vs Zombies
