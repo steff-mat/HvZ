@@ -4,15 +4,18 @@ const ctx = canvas.getContext("2d");
 let speed = 5;
 let x = 50;
 let y = 50;
-let velocityX = 0;
-let velocityY = 0;
-
-
+let velocityRightX = 0;
+let velocityLeftX = 0;
+let velocityUpY = 0;
+let velocityDownY = 0;
 
 function update() {
+
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    x += velocityX;
-    y += velocityY;
+    x += velocityRightX;
+    x += velocityLeftX;
+    y += velocityUpY;
+    y += velocityDownY
     ctx.fillRect(x, y, 5, 5);
     requestAnimationFrame(update, 1000 / 60);
 }

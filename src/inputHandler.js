@@ -1,31 +1,29 @@
-
-
 addEventListener("keydown", function (e) {
     if (e.code == "KeyW") {
-        velocityY = -speed;
+        velocityUpY = -speed;
     }
     if (e.code == "KeyS") {
-        velocityY = speed;
+        velocityDownY = speed;
     }
     if (e.code == "KeyA") {
-        velocityX = -speed;
+        velocityLeftX = -speed;
     }
     if (e.code == "KeyD") {
-        velocityX = speed;
+        velocityRightX = speed;
     }
 })
 
 addEventListener("keyup", function (e) {
     if (e.code == "KeyW") {
-        velocityY = 0;
+        velocityUpY = 0;
     }
     if (e.code == "KeyS") {
-        velocityY = 0;
+        velocityDownY = 0;
     }
     if (e.code == "KeyA") {
-        velocityX = 0;
+        velocityLeftX = 0;
     }
     if (e.code == "KeyD") {
-        velocityX = 0;
+        velocityRightX = 0;
     }
 })
