@@ -1,7 +1,7 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 
-let speed = 5;
+let speed = 2;
 let x = 50;
 let y = 50;
 let velocityRightX = 0;
@@ -16,8 +16,7 @@ function update() {
     x += velocityLeftX;
     y += velocityUpY;
     y += velocityDownY
-    ctx.fillRect(x, y, 5, 5);
+    ctx.fillRect(x, y, 50, 50);
     requestAnimationFrame(update, 1000 / 60);
 }
-
 update();
